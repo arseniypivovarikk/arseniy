@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Адаптивная личная страница-визитка — лабораторная работа по HTML5 и CSS3.">
+  <title>Моё портфолио | Fullstack Lab 2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="На главную">портфолио<span>.</span></a>
+      <nav class="navigation" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">СТУДЕНТ · FRONTEND DEVELOPER</p>
+        <h1 id="hero-title">Привет! Я <span>Алекс</span>.<br>Создаю сайты для людей.</h1>
+        <p class="hero-description">Изучаю веб-разработку и превращаю идеи в понятные, красивые и адаптивные интерфейсы.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Мои проекты <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#contact">Связаться</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Кратко обо мне">
+        <div class="avatar" aria-hidden="true">A.</div>
+        <p class="hero-card-label">СЕЙЧАС ИЗУЧАЮ</p>
+        <h2>HTML5 · CSS3 · JavaScript</h2>
+        <p>Семантика, Flexbox, Grid и адаптивный дизайн.</p>
+        <div class="status"><span></span> Открыт к новым проектам</div>
+      </aside>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 / ОБО МНЕ</p>
+        <h2>Немного обо мне</h2>
+      </div>
+      <div class="about-content">
+        <p>Я начинающий веб-разработчик. Мне нравится разбираться, как устроены сайты, продумывать удобную структуру страниц и делать интерфейсы, которые хорошо работают на разных устройствах.</p>
+        <p>Моя цель — освоить современные frontend-технологии и собрать портфолио учебных и практических проектов.</p>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / МОИ НАВЫКИ</p>
+          <h2>Инструменты, которые изучаю</h2>
+          <p class="section-intro">Четыре направления, с которых начинается создание интерфейса.</p>
+        </div>
+        <div class="card-grid">
+          <article class="skill-card">
+            <div class="card-icon icon-orange" aria-hidden="true">&lt;/&gt;</div>
+            <p class="card-number">01</p>
+            <h3>HTML5</h3>
+            <p>Семантическая структура документа, заголовки, секции, ссылки и формы.</p>
+            <span class="tag">Структура</span>
+          </article>
+          <article class="skill-card">
+            <div class="card-icon icon-blue" aria-hidden="true">✳</div>
+            <p class="card-number">02</p>
+            <h3>CSS3</h3>
+            <p>Стили, типографика, цвета, отступы и box model для аккуратного интерфейса.</p>
+            <span class="tag">Оформление</span>
+          </article>
+          <article class="skill-card">
+            <div class="card-icon icon-purple" aria-hidden="true">↔</div>
+            <p class="card-number">03</p>
+            <h3>Flexbox и Grid</h3>
+            <p>Выравнивание элементов по одной оси и построение двумерных сеток.</p>
+            <span class="tag">Макет</span>
+          </article>
+          <article class="skill-card">
+            <div class="card-icon icon-green" aria-hidden="true">▣</div>
+            <p class="card-number">04</p>
+            <h3>Адаптивность</h3>
+            <p>Mobile-first подход и media queries для телефонов, планшетов и компьютеров.</p>
+            <span class="tag">Responsive</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">03 / ПОРТФОЛИО</p>
+        <h2>Учебные проекты</h2>
+        <p class="section-intro">Примеры работ, которые можно заменить своими проектами.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual visual-one"><span>01</span><div class="mock-window"><i></i><i></i><i></i><b></b><b></b></div></div>
+          <div class="project-info"><p class="project-type">HTML5 · CSS3</p><h3>Личная страница</h3><p>Семантическая разметка и оформление блоков.</p></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-two"><span>02</span><div class="mock-grid"><i></i><i></i><i></i><i></i></div></div>
+          <div class="project-info"><p class="project-type">CSS GRID</p><h3>Сетка карточек</h3><p>Гибкая раскладка карточек с равными промежутками.</p></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-three"><span>03</span><div class="mock-phone"><b></b><i></i><i></i></div></div>
+          <div class="project-info"><p class="project-type">RESPONSIVE</p><h3>Адаптивный интерфейс</h3><p>Mobile-first стили для разных размеров экрана.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div><p class="eyebrow">04 / КОНТАКТЫ</p><h2>Давайте создадим<br>что-то интересное.</h2></div>
+        <div class="contact-links">
+          <a href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#home">портфолио<span>.</span></a>
+      <p>Лабораторная работа №2 · HTML5 и CSS3</p>
+      <p>© <span id="year">2026</span> Учебный проект</p>
+    </div>
+  </footer>
+</body>
+</html>
